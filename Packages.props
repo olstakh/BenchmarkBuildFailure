@@ -1,0 +1,31 @@
+<!--
+  Central management of package versions. Lets you update package versions used by
+  the repo in one central place.
+  Docs: https://github.com/microsoft/MSBuildSdks/tree/master/src/CentralPackageVersions
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- Change below to 0.13.5 and benchmark run will be successful -->
+    <BenchmarkVersion>0.13.6</BenchmarkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.6.3" />
+    <PackageReference Update="MSTest.TestAdapter" Version="2.2.8" />
+    <PackageReference Update="MSTest.TestFramework" Version="2.2.8" />
+    <PackageReference Update="coverlet.collector" Version="6.0.0" />
+    <PackageReference Update="FluentAssertions" Version="6.11.0" />
+
+    <PackageReference Update="xunit" Version="2.5.0" />
+    <PackageReference Update="xunit.runner.visualstudio" Version="2.5.0" />
+    <PackageReference Update="xunit.categories" Version="2.0.6" />
+    <PackageReference Update="coverlet.msbuild" Version="6.0.0" />
+    <PackageReference Update="bunit" Version="1.20.08" />
+    <PackageReference Update="Moq" Version="4.18.4" />
+    <PackageReference Update="BenchmarkDotNet" Version="$(BenchmarkVersion)" />
+    <PackageReference Update="BenchmarkDotNet.Diagnostics.Windows" Version="$(BenchmarkVersion)" />    
+    <PackageReference Update="Polly" Version="[7.2.3.1]" />
+    <PackageReference Update="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.20" />
+    <PackageReference Update="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Update="System.Security.Cryptography.Pkcs" Version="7.0.3" />
+  </ItemGroup>
+</Project>

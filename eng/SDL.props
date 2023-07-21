@@ -1,0 +1,33 @@
+<Project>
+  <!--
+    Enable build settings requires for SDL compliance
+  -->
+
+  <!--
+    Roslyn analyzers.
+
+    Roslyn analyzers are required for SDL compliance when building C# code.
+    
+    OneBranch (https://onebranch.visualstudio.com/OneBranch/_wiki/wikis/OneBranch.wiki/4784/SDL-Options?anchor=roslyn) advises using the 1ES rulesets (see https://www.1eswiki.com/wiki/Integrating_Roslyn_security_checks_with_your_MSBuild_projects#Integrating_Roslyn_security_checks)
+  -->
+  <PropertyGroup>
+    <!--
+      Note, EnableNETAnalyzers setting assumes netsdk 5.0+. For
+      earlier sdks, additional nuget packages are required to enable
+      analysis.
+    -->
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Internal.Analyzers" VersionOverride="2.9.7" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Internal.Analyzers.Rulesets" VersionOverride="1.0.39" PrivateAssets="all" />
+    <PackageReference Include="StyleCop.Analyzers" VersionOverride="1.2.0-beta.435">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" VersionOverride="17.6.40">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

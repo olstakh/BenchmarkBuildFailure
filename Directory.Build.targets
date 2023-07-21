@@ -1,0 +1,20 @@
+<Project>
+    <!-- Use centrally managed package versions. See Packages.props. -->
+    <PropertyGroup>
+        <!-- workaround issue https://github.com/microsoft/MSBuildSdks/issues/250 -->
+        <EnableCentralPackageVersions Condition="'$(EnableCentralPackageVersions)' == ''">true</EnableCentralPackageVersions>
+    </PropertyGroup>
+    <Sdk Name="Microsoft.Build.CentralPackageVersions" />
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <!--
+      The following packages are explicitly to all .net 6.0 projects to make sure secure version of them is restored
+    -->
+    <PackageReference Include="System.Security.Cryptography.Pkcs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--
+      The following packages are explicitly to all projects to make sure secure version of them is restored
+    -->
+    <PackageReference Include="Newtonsoft.json" />
+  </ItemGroup>
+</Project>

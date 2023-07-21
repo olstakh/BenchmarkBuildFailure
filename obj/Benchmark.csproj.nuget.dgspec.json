@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\code\\BenchmarkBuildRepo\\Benchmark.csproj": {}
+  },
+  "projects": {
+    "C:\\code\\BenchmarkBuildRepo\\Benchmark.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\code\\BenchmarkBuildRepo\\Benchmark.csproj",
+        "projectName": "Benchmark",
+        "projectPath": "C:\\code\\BenchmarkBuildRepo\\Benchmark.csproj",
+        "packagesPath": "C:\\Users\\olstakh\\.nuget\\packages\\",
+        "outputPath": "C:\\code\\BenchmarkBuildRepo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\code\\BenchmarkBuildRepo\\NuGet.Config",
+          "C:\\Users\\olstakh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "BenchmarkDotNet": {
+              "target": "Package",
+              "version": "[0.13.6, )"
+            },
+            "BenchmarkDotNet.Diagnostics.Windows": {
+              "target": "Package",
+              "version": "[0.13.6, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[6.0.20, )"
+            },
+            "Microsoft.Internal.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.7, )",
+              "versionOverride": "[2.9.7, )"
+            },
+            "Microsoft.Internal.Analyzers.Rulesets": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.39, )",
+              "versionOverride": "[1.0.39, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.3, )"
+            },
+            "Microsoft.VisualStudio.Threading.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[17.6.40, )",
+              "versionOverride": "[17.6.40, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "Newtonsoft.json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.3.1, 7.2.3.1]"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )",
+              "versionOverride": "[1.2.0-beta.435, )"
+            },
+            "System.Security.Cryptography.Pkcs": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "xunit.categories": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.20, 6.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.20, 6.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.20, 6.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.20, 6.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

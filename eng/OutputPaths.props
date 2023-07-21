@@ -1,0 +1,15 @@
+<!--
+  Sets up output paths for all the projects in our repo.
+-->
+<Project>
+  <PropertyGroup>
+    <BinariesBuildTypeArchDirectory Condition="'$(BinariesBuildTypeArchDirectory)' == ''">$(RepoRoot)out\$(Configuration)-$(Platform)\</BinariesBuildTypeArchDirectory>
+    <OutputPath Condition=" '$(OutputPath)' == '' ">$(BinariesBuildTypeArchDirectory)$(MSBuildProjectName)\</OutputPath>
+
+    <!-- Default to place all our ev2 deployment packages in a separate 'Deploy' folder -->
+    <ServiceGroupRootOutputPath Condition=" '$(ServiceGroupRootOutputPath)' == '' ">$(BinariesBuildTypeArchDirectory)Deploy\$(MSBuildProjectName)</ServiceGroupRootOutputPath>
+
+    <!-- Default to place nuget packages. Note that obpipeline requires this for package publishing: https://onebranch.visualstudio.com/OneBranch/_wiki/wikis/OneBranch.wiki/4621/Publish-Packages -->
+    <PackageOutputPath Condition="'$(PackageOutputPath)' == ''">$(BinariesBuildTypeArchDirectory)\packages</PackageOutputPath>
+  </PropertyGroup>
+</Project>

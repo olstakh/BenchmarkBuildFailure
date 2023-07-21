@@ -1,0 +1,17 @@
+<Project>
+  <Sdk Name="DotNet.ReproducibleBuilds.Isolated" />
+  <PropertyGroup>
+    <!-- Default to x64 if no platform is specified. Service fabric project type requires x64 platform type for some reason. -->
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+    <!-- Provide repo root variable: -->
+    <RepoRoot>$(MSBuildThisFileDirectory)</RepoRoot>
+
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <Import Project="eng\OutputPaths.props" />
+  <Import Project="eng\SDL.props" />
+</Project>
