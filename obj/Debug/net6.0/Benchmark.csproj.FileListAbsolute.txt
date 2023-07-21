@@ -1,6 +1,0 @@
-C:\code\BenchmarkBuildRepo\obj\Debug\net6.0\Benchmark.csproj.AssemblyReference.cache
-C:\code\BenchmarkBuildRepo\obj\Debug\net6.0\MvcTestingAppManifest.json
-C:\code\BenchmarkBuildRepo\obj\Debug\net6.0\Benchmark.GeneratedMSBuildEditorConfig.editorconfig
-C:\code\BenchmarkBuildRepo\obj\Debug\net6.0\Benchmark.AssemblyInfoInputs.cache
-C:\code\BenchmarkBuildRepo\obj\Debug\net6.0\Benchmark.AssemblyInfo.cs
-C:\code\BenchmarkBuildRepo\obj\Debug\net6.0\Benchmark.csproj.CoreCompileInputs.cache
