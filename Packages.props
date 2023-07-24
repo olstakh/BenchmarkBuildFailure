@@ -4,10 +4,6 @@
   Docs: https://github.com/microsoft/MSBuildSdks/tree/master/src/CentralPackageVersions
 -->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <!-- Change below to 0.13.5 and benchmark run will be successful -->
-    <BenchmarkVersion>0.13.6</BenchmarkVersion>
-  </PropertyGroup>
   <ItemGroup>
     <PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.6.3" />
     <PackageReference Update="MSTest.TestAdapter" Version="2.2.8" />
@@ -21,8 +17,11 @@
     <PackageReference Update="coverlet.msbuild" Version="6.0.0" />
     <PackageReference Update="bunit" Version="1.20.08" />
     <PackageReference Update="Moq" Version="4.18.4" />
-    <PackageReference Update="BenchmarkDotNet" Version="$(BenchmarkVersion)" />
-    <PackageReference Update="BenchmarkDotNet.Diagnostics.Windows" Version="$(BenchmarkVersion)" />    
+    <!--
+      First working version is 0.13.7-nightly.20230717.35
+    -->
+    <PackageReference Update="BenchmarkDotNet" Version="0.13.7-nightly.20230713.34" />
+    <PackageReference Update="BenchmarkDotNet.Diagnostics.Windows" Version="0.13.7-nightly.20230713.34" />    
     <PackageReference Update="Polly" Version="[7.2.3.1]" />
     <PackageReference Update="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.20" />
     <PackageReference Update="Newtonsoft.Json" Version="13.0.2" />
