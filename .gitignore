@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BenchmarkDotNet.Artifacts
+/out
+/obj
+/.vs
+/.vs/Benchmark/v17/.suo
